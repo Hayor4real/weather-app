@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="index.css" />
     <title>Weather App</title>
   </head>
-  <body>
+  <body onload="DefaultScreen()">
     <center>
-      <h1>7 DAYS WEATHER FORECAST</h1>
+      <h1>5 DAYS WEATHER FORECAST</h1>
       <p id="inputContainer">City: <input type="text" id="cityInput" /></p>
-      <button>Click</button>
+      <button onclick="GetInfo()">Click</button>
       <h2 id="cityName">--Germany--</h2>
     </center>
     <div id="weatherContainer">
@@ -19,10 +19,10 @@
         <div class="icons">
           <p class="weather" id="day1"></p>
           <div class="image">
-            <img src="" class="imgClass" id="img1" alt="" />
+            <img src="image/dot.jpg" class="imgClass" id="img1" alt="" />
           </div>
-          <p class="minValues" id="day1Min">Loading ....</p>
-          <p class="maxValues" id="day1Max">Loading....</p>
+          <p class="minValues" id="day1Min">Loading ..</p>
+          <p class="maxValues" id="day1Max">Loading..</p>
         </div>
         <div class="icons">
           <p class="weather" id="day2"></p>
@@ -55,22 +55,6 @@
           </div>
           <p class="minValues" id="day5Min">Loading ....</p>
           <p class="maxValues" id="day5Max">Loading....</p>
-        </div>
-        <div class="icons">
-          <p class="weather" id="day6"></p>
-          <div class="image">
-            <img src="" class="imgClass" id="img6" alt="" />
-          </div>
-          <p class="minValues" id="day6Min">Loading ....</p>
-          <p class="maxValues" id="day6Max">Loading....</p>
-        </div>
-        <div class="icons">
-          <p class="weather" id="day7"></p>
-          <div class="image">
-            <img src="" class="imgClass" id="img7" alt="" />
-          </div>
-          <p class="minValues" id="day7Min">Loading ....</p>
-          <p class="maxValues" id="day7Max">Loading....</p>
         </div>
       </div>
     </div>
